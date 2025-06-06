@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Block Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <div class="relative w-full max-w-xl mx-auto overflow-hidden rounded-lg shadow-lg">
+    <!-- Slider Container -->
+    <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+      <div class="w-full h-64 flex-shrink-0 bg-red-500 flex items-center justify-center text-white text-2xl font-bold">Red</div>
+      <div class="w-full h-64 flex-shrink-0 bg-green-500 flex items-center justify-center text-white text-2xl font-bold">Green</div>
+      <div class="w-full h-64 flex-shrink-0 bg-blue-500 flex items-center justify-center text-white text-2xl font-bold">Blue</div>
+      <div class="w-full h-64 flex-shrink-0 bg-orange-500 flex items-center justify-center text-white text-2xl font-bold">purple</div>
+    </div>
+
+    <!-- Optional Navigation -->
+    <button id="prev" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full hover:bg-black">‹</button>
+    <button id="next" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 text-white px-3 py-1 rounded-full hover:bg-black">›</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
